@@ -1,16 +1,17 @@
-
 #!/bin/bash
 set -o errexit
 set -o pipefail
 
 mkdir -p ./assets # ensure the assets directory exists
 
-# For DEV execution - parses env variables from .env file.
+if [[ -z "$ACCESS_TOKEN" || -z "$PACKAGE_URL" ]]; then
+  echo "Environment variables not set. Attempting to read from .env file..."
+    if [[ -f .env ]]; then
+        source .env
+    else
+        echo "Error: Environment variables ACCESS_TOKEN or PACKAGE_URL are not set and .env file not found."
+        exit 1
+  fi
+fi
 
-# ACCESS_TOKEN=$(cat .env | grep ACCESS_TOKEN | cut -d '=' -f2-)
-# PACKAGE_URL=$(cat .env | grep PACKAGE_URL | cut -d '=' -f2- | sed 's/\"//g')
-
-# For deployment - takes env variables from global variables.
-ACCESS_TOKEN=$ACCESS_TOKEN
-PACKAGE_URL=$PACKAGE_URL
-curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -o ./assets/embedding.js ${PACKAGE_URL}
+curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -o ./assets/embedding.js "${PACKAGE_URL}"
