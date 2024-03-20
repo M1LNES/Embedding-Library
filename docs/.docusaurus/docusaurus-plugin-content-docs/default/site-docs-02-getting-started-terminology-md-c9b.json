@@ -1,0 +1,30 @@
+{
+  "id": "Getting Started/terminology",
+  "title": "Terminology",
+  "description": "Omni-Studio terms",
+  "source": "@site/docs/02-Getting Started/terminology.md",
+  "sourceDirName": "02-Getting Started",
+  "slug": "/begin/terminology",
+  "permalink": "/begin/terminology",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/terminology.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Terminology",
+    "sidebar_position": 2,
+    "slug": "/begin/terminology",
+    "hide_title": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/begin/concepts"
+  },
+  "next": {
+    "title": "Project Initialization",
+    "permalink": "/begin/initialization"
+  }
+}

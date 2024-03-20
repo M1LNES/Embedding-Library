@@ -1,0 +1,29 @@
+{
+  "id": "Development/info",
+  "title": "Conventions",
+  "description": "File Extension",
+  "source": "@site/docs/03-Development/info.md",
+  "sourceDirName": "03-Development",
+  "slug": "/development/conventions",
+  "permalink": "/development/conventions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/info.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Conventions",
+    "sidebar_position": 2,
+    "slug": "/development/conventions"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Structure",
+    "permalink": "/development/structure"
+  },
+  "next": {
+    "title": "Development",
+    "permalink": "/development/development"
+  }
+}

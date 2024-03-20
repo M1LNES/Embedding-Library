@@ -1,0 +1,325 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/",
+          "tagsPath": "/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/milan.janoch/Documents/embedding_library/docs/sidebars.js",
+          "contentPath": "/Users/milan.janoch/Documents/embedding_library/docs/docs",
+          "contentPathLocalized": "/Users/milan.janoch/Documents/embedding_library/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "id": "Development/development",
+              "title": "Development",
+              "description": "Git cloning",
+              "source": "@site/docs/03-Development/development.md",
+              "sourceDirName": "03-Development",
+              "slug": "/development/development",
+              "permalink": "/development/development",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/development.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Development",
+                "sidebar_position": 3,
+                "slug": "/development/development"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Conventions",
+                "permalink": "/development/conventions"
+              }
+            },
+            {
+              "id": "Development/info",
+              "title": "Conventions",
+              "description": "File Extension",
+              "source": "@site/docs/03-Development/info.md",
+              "sourceDirName": "03-Development",
+              "slug": "/development/conventions",
+              "permalink": "/development/conventions",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/info.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Conventions",
+                "sidebar_position": 2,
+                "slug": "/development/conventions"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Structure",
+                "permalink": "/development/structure"
+              },
+              "next": {
+                "title": "Development",
+                "permalink": "/development/development"
+              }
+            },
+            {
+              "id": "Development/structure",
+              "title": "Structure",
+              "description": "./docs",
+              "source": "@site/docs/03-Development/structure.md",
+              "sourceDirName": "03-Development",
+              "slug": "/development/structure",
+              "permalink": "/development/structure",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/structure.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Structure",
+                "sidebar_position": 1,
+                "slug": "/development/structure",
+                "hide_title": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Components",
+                "permalink": "/begin/components"
+              },
+              "next": {
+                "title": "Conventions",
+                "permalink": "/development/conventions"
+              }
+            },
+            {
+              "id": "Getting Started/components",
+              "title": "Components",
+              "description": "Keep in mind that these components are resizable - if you don't specify width/height, the mounted component will use the given space. To do that, in the outer component, you need to specify display=flex and pass style prop to the Widget component style={{\"flex\":1}}.",
+              "source": "@site/docs/02-Getting Started/components.md",
+              "sourceDirName": "02-Getting Started",
+              "slug": "/begin/components",
+              "permalink": "/begin/components",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/components.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Components",
+                "sidebar_position": 4,
+                "slug": "/begin/components"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Project Initialization",
+                "permalink": "/begin/initialization"
+              },
+              "next": {
+                "title": "Structure",
+                "permalink": "/development/structure"
+              }
+            },
+            {
+              "id": "Getting Started/installation",
+              "title": "Installation",
+              "description": "Installation",
+              "source": "@site/docs/02-Getting Started/installation.md",
+              "sourceDirName": "02-Getting Started",
+              "slug": "/begin/concepts",
+              "permalink": "/begin/concepts",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/installation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Installation",
+                "sidebar_position": 1,
+                "slug": "/begin/concepts",
+                "hide_title": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/"
+              },
+              "next": {
+                "title": "Terminology",
+                "permalink": "/begin/terminology"
+              }
+            },
+            {
+              "id": "Getting Started/project-initialization",
+              "title": "Project Initialization",
+              "description": "Create Project / edit existing one",
+              "source": "@site/docs/02-Getting Started/project-initialization.md",
+              "sourceDirName": "02-Getting Started",
+              "slug": "/begin/initialization",
+              "permalink": "/begin/initialization",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/project-initialization.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Project Initialization",
+                "sidebar_position": 3,
+                "slug": "/begin/initialization",
+                "hide_title": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Terminology",
+                "permalink": "/begin/terminology"
+              },
+              "next": {
+                "title": "Components",
+                "permalink": "/begin/components"
+              }
+            },
+            {
+              "id": "Getting Started/terminology",
+              "title": "Terminology",
+              "description": "Omni-Studio terms",
+              "source": "@site/docs/02-Getting Started/terminology.md",
+              "sourceDirName": "02-Getting Started",
+              "slug": "/begin/terminology",
+              "permalink": "/begin/terminology",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/terminology.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Terminology",
+                "sidebar_position": 2,
+                "slug": "/begin/terminology",
+                "hide_title": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/begin/concepts"
+              },
+              "next": {
+                "title": "Project Initialization",
+                "permalink": "/begin/initialization"
+              }
+            },
+            {
+              "id": "single-page",
+              "title": "Introduction",
+              "description": "EmpliEmbed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.",
+              "source": "@site/docs/01-single-page.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/01-single-page.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Introduction",
+                "sidebar_position": 1,
+                "slug": "/"
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Installation",
+                "permalink": "/begin/concepts"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "single-page"
+              },
+              {
+                "type": "category",
+                "label": "Getting Started",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Getting Started/installation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Getting Started/terminology"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Getting Started/project-initialization"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Getting Started/components"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Development",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Development/structure"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Development/info"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Development/development"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": null
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

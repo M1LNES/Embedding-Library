@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "single-page",
+          "docs": [
+            {
+              "id": "Development/development",
+              "path": "/development/development",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Development/info",
+              "path": "/development/conventions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Development/structure",
+              "path": "/development/structure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Getting Started/components",
+              "path": "/begin/components",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Getting Started/installation",
+              "path": "/begin/concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Getting Started/project-initialization",
+              "path": "/begin/initialization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Getting Started/terminology",
+              "path": "/begin/terminology",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "single-page",
+              "path": "/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/",
+                "label": "single-page"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

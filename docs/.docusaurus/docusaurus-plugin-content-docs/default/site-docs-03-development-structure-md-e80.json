@@ -1,0 +1,30 @@
+{
+  "id": "Development/structure",
+  "title": "Structure",
+  "description": "./docs",
+  "source": "@site/docs/03-Development/structure.md",
+  "sourceDirName": "03-Development",
+  "slug": "/development/structure",
+  "permalink": "/development/structure",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/structure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Structure",
+    "sidebar_position": 1,
+    "slug": "/development/structure",
+    "hide_title": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Components",
+    "permalink": "/begin/components"
+  },
+  "next": {
+    "title": "Conventions",
+    "permalink": "/development/conventions"
+  }
+}

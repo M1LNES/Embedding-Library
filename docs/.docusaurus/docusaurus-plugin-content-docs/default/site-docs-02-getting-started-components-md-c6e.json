@@ -1,0 +1,29 @@
+{
+  "id": "Getting Started/components",
+  "title": "Components",
+  "description": "Keep in mind that these components are resizable - if you don't specify width/height, the mounted component will use the given space. To do that, in the outer component, you need to specify display=flex and pass style prop to the Widget component style={{\"flex\":1}}.",
+  "source": "@site/docs/02-Getting Started/components.md",
+  "sourceDirName": "02-Getting Started",
+  "slug": "/begin/components",
+  "permalink": "/begin/components",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/components.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Components",
+    "sidebar_position": 4,
+    "slug": "/begin/components"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Project Initialization",
+    "permalink": "/begin/initialization"
+  },
+  "next": {
+    "title": "Structure",
+    "permalink": "/development/structure"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/",
+        "docId": "single-page",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/begin/concepts",
+            "docId": "Getting Started/installation",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Terminology",
+            "href": "/begin/terminology",
+            "docId": "Getting Started/terminology",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Project Initialization",
+            "href": "/begin/initialization",
+            "docId": "Getting Started/project-initialization",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Components",
+            "href": "/begin/components",
+            "docId": "Getting Started/components",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Development",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Structure",
+            "href": "/development/structure",
+            "docId": "Development/structure",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Conventions",
+            "href": "/development/conventions",
+            "docId": "Development/info",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Development",
+            "href": "/development/development",
+            "docId": "Development/development",
+            "unlisted": false
+          }
+        ]
+      }
+    ]
+  },
+  "docs": {
+    "Development/development": {
+      "id": "Development/development",
+      "title": "Development",
+      "description": "Git cloning",
+      "sidebar": "tutorialSidebar"
+    },
+    "Development/info": {
+      "id": "Development/info",
+      "title": "Conventions",
+      "description": "File Extension",
+      "sidebar": "tutorialSidebar"
+    },
+    "Development/structure": {
+      "id": "Development/structure",
+      "title": "Structure",
+      "description": "./docs",
+      "sidebar": "tutorialSidebar"
+    },
+    "Getting Started/components": {
+      "id": "Getting Started/components",
+      "title": "Components",
+      "description": "Keep in mind that these components are resizable - if you don't specify width/height, the mounted component will use the given space. To do that, in the outer component, you need to specify display=flex and pass style prop to the Widget component style={{\"flex\":1}}.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Getting Started/installation": {
+      "id": "Getting Started/installation",
+      "title": "Installation",
+      "description": "Installation",
+      "sidebar": "tutorialSidebar"
+    },
+    "Getting Started/project-initialization": {
+      "id": "Getting Started/project-initialization",
+      "title": "Project Initialization",
+      "description": "Create Project / edit existing one",
+      "sidebar": "tutorialSidebar"
+    },
+    "Getting Started/terminology": {
+      "id": "Getting Started/terminology",
+      "title": "Terminology",
+      "description": "Omni-Studio terms",
+      "sidebar": "tutorialSidebar"
+    },
+    "single-page": {
+      "id": "single-page",
+      "title": "Introduction",
+      "description": "EmpliEmbed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}
