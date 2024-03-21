@@ -7,7 +7,7 @@ import {
 } from '../functions/widget-config'
 import WidgetVision from './widget-vision'
 import { useQuery } from '@tanstack/react-query'
-import { number, string, object, array } from 'prop-types'
+import { number, string, object, array, func } from 'prop-types'
 import { Box, CircularProgress } from '@mui/material'
 import { previousSuite } from '../functions/prejson-suite'
 import { BOARD_WIDGET_FIELD_TYPE_TO_PREJSON_TYPE } from '../constants/prejson-type'
@@ -25,11 +25,21 @@ const PreJSONContext = prejson.PreJSONContext
  * @param {array} params Array of preJSON objects for expanding.
  * @param {number} width Width of component.
  * @param {number} height Height of component.
+ * @param {func} tokenFunc Function that returns object with tokens (these tokens are ussed instead of .env variables).
  *
  * @returns {React.ReactElement} Widget component.
  */
 const Widget = (props) => {
-	const { boardID, widgetID, params, className, style, width, height } = props
+	const {
+		boardID,
+		widgetID,
+		params,
+		className,
+		style,
+		width,
+		height,
+		tokenFunc,
+	} = props
 	const parsedParams = useMemo(() => {
 		if (!Array.isArray(params)) {
 			return {}
@@ -44,7 +54,7 @@ const Widget = (props) => {
 
 	const { data: fieldsToDeclare, isLoading: areFieldsLoading } = useQuery({
 		queryKey: ['fieldsToDeclare', boardID],
-		queryFn: async () => await fetchBoardFields(boardID),
+		queryFn: async () => await fetchBoardFields(boardID, tokenFunc),
 	})
 
 	const context = useMemo(() => {
@@ -67,7 +77,7 @@ const Widget = (props) => {
 
 	const { data: widgetData, isLoading: isWidgetDataLoading } = useQuery({
 		queryKey: ['widget', boardID, widgetID],
-		queryFn: async () => await fetchWidgetData(boardID, widgetID),
+		queryFn: async () => await fetchWidgetData(boardID, widgetID, tokenFunc),
 	})
 
 	const requestsNotExpanded = useMemo(() => {
@@ -139,7 +149,8 @@ const Widget = (props) => {
 
 	const { data, isLoading } = useQuery({
 		queryKey: ['data', boardID, widgetID, expandedRequests],
-		queryFn: async () => await fetchDataAllRequests(expandedRequests),
+		queryFn: async () =>
+			await fetchDataAllRequests(expandedRequests, tokenFunc),
 		enabled: !!widgetData && !!widgetData.requests && !!expandedRequests,
 	})
 
@@ -239,6 +250,7 @@ Widget.propTypes = {
 	width: number,
 	className: string,
 	style: object,
+	tokenFunc: func,
 }
 
 export default Widget

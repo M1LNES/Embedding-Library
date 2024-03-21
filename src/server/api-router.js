@@ -12,10 +12,15 @@ const apiRouter = express.Router()
 apiRouter.post('/widget-data', async (req, res) => {
 	const { payload, path } = req.body
 	const url = process.env.PUBLIC_API_URL + '/3/omni/metrics'
+	const publicApiToken =
+		req.headers['x-pbtoken'] !== 'undefined'
+			? req.headers['x-pbtoken']
+			: process.env.ACCESS_TOKEN
+
 	try {
 		const response = await axios.post(url, payload, {
 			headers: {
-				Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+				Authorization: `Bearer ${publicApiToken}`,
 				'content-type': `application/json`,
 				'x-sbks-token': `oauth`,
 				'x-sbks-data-endpoint': `POST ${path}`,
@@ -37,6 +42,14 @@ apiRouter.post('/widget-data', async (req, res) => {
  */
 apiRouter.get('/board-fields/:boardID', async (req, res) => {
 	const { boardID } = req.params
+	const publicApiToken =
+		req.headers['x-pbtoken'] !== 'undefined'
+			? req.headers['x-pbtoken']
+			: process.env.ACCESS_TOKEN
+	const omniApiToken =
+		req.headers['x-ostoken'] !== 'undefined'
+			? req.headers['x-ostoken']
+			: process.env.OMNI_API_TOKEN
 
 	try {
 		const public_url = process.env.PUBLIC_API_URL + '/3/omni-studio'
@@ -46,13 +59,13 @@ apiRouter.get('/board-fields/:boardID', async (req, res) => {
 			method: 'GET',
 			path: pathUrl,
 			headers: {
-				authorization: `Bearer ${process.env.OMNI_API_TOKEN}`,
+				authorization: `Bearer ${omniApiToken}`,
 			},
 		}
 
 		const response = await axios.post(public_url, payload, {
 			headers: {
-				Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+				Authorization: `Bearer ${publicApiToken}`,
 				'content-type': `application/json`,
 				'x-sbks-token': `oauth`,
 			},
@@ -76,6 +89,14 @@ apiRouter.get('/board-fields/:boardID', async (req, res) => {
  */
 apiRouter.get('/widget-config/:boardID', async (req, res) => {
 	const { boardID } = req.params
+	const publicApiToken =
+		req.headers['x-pbtoken'] !== 'undefined'
+			? req.headers['x-pbtoken']
+			: process.env.ACCESS_TOKEN
+	const omniApiToken =
+		req.headers['x-ostoken'] !== 'undefined'
+			? req.headers['x-ostoken']
+			: process.env.OMNI_API_TOKEN
 
 	try {
 		const public_url = process.env.PUBLIC_API_URL + '/3/omni-studio'
@@ -84,13 +105,13 @@ apiRouter.get('/widget-config/:boardID', async (req, res) => {
 			method: 'GET',
 			path: pathUrl,
 			headers: {
-				authorization: `Bearer ${process.env.OMNI_API_TOKEN}`,
+				authorization: `Bearer ${omniApiToken}`,
 			},
 		}
 
 		const response = await axios.post(public_url, payload, {
 			headers: {
-				Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+				Authorization: `Bearer ${publicApiToken}`,
 				'content-type': `application/json`,
 				'x-sbks-token': `oauth`,
 			},
