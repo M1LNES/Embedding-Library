@@ -1,1 +1,11 @@
 node_modules
+docs
+.gitignore
+webpack.config.js
+.env
+.prettierrc.js
+webpack.config.js
+src
+scripts
+package.json
+.babelrc

@@ -1,4 +1,4 @@
-import { prejson, prejsonTime } from '../../../assets/embedding'
+import { prejson, prejsonTime } from '../../../dist/embedding'
 const PreJSONType = prejson.PreJSONType
 const getModifierSpecification = prejson.getModifierSpecification
 

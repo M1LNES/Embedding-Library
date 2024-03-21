@@ -1,4 +1,4 @@
-import { prejson } from '../../../assets/embedding'
+import { prejson } from '../../../dist/embedding'
 const PreJSONType = prejson.PreJSONType
 
 /**

@@ -2,7 +2,7 @@
 set -o errexit
 set -o pipefail
 
-mkdir -p ./assets # ensure the assets directory exists
+mkdir -p ./dist # ensure the dist directory exists
 
 if [[ -z "$ACCESS_TOKEN" || -z "$PACKAGE_URL" ]]; then
   echo "Environment variables not set. Attempting to read from .env file..."
@@ -14,4 +14,4 @@ if [[ -z "$ACCESS_TOKEN" || -z "$PACKAGE_URL" ]]; then
   fi
 fi
 
-curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -o ./assets/embedding.js "${PACKAGE_URL}"
+curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -o ./dist/embedding.js "${PACKAGE_URL}"
