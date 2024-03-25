@@ -1,0 +1,28 @@
+{
+  "id": "Embedding Studio/preview",
+  "title": "Preview",
+  "description": "You can preview widgets only if tokens in localstorage are valid.",
+  "source": "@site/docs/04-Embedding Studio/preview.md",
+  "sourceDirName": "04-Embedding Studio",
+  "slug": "/studio/preview",
+  "permalink": "/studio/preview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Preview",
+    "sidebar_position": 3,
+    "slug": "/studio/preview"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tokens",
+    "permalink": "/studio/tokens"
+  },
+  "next": {
+    "title": "Generating code",
+    "permalink": "/studio/generation"
+  }
+}

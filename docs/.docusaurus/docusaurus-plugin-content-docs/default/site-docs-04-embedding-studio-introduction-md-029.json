@@ -1,0 +1,28 @@
+{
+  "id": "Embedding Studio/introduction",
+  "title": "Introduction",
+  "description": "What Embedding Studio offers?",
+  "source": "@site/docs/04-Embedding Studio/introduction.md",
+  "sourceDirName": "04-Embedding Studio",
+  "slug": "/studio/intro",
+  "permalink": "/studio/intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Introduction",
+    "sidebar_position": 1,
+    "slug": "/studio/intro"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Development",
+    "permalink": "/development/development"
+  },
+  "next": {
+    "title": "Tokens",
+    "permalink": "/studio/tokens"
+  }
+}

@@ -31,13 +31,6 @@
           },
           {
             "type": "link",
-            "label": "Terminology",
-            "href": "/begin/terminology",
-            "docId": "Getting Started/terminology",
-            "unlisted": false
-          },
-          {
-            "type": "link",
             "label": "Project Initialization",
             "href": "/begin/initialization",
             "docId": "Getting Started/project-initialization",
@@ -48,6 +41,13 @@
             "label": "Components",
             "href": "/begin/components",
             "docId": "Getting Started/components",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Terminology",
+            "href": "/begin/terminology",
+            "docId": "Getting Started/terminology",
             "unlisted": false
           }
         ]
@@ -80,6 +80,42 @@
             "unlisted": false
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "Embedding Studio",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/studio/intro",
+            "docId": "Embedding Studio/introduction",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Tokens",
+            "href": "/studio/tokens",
+            "docId": "Embedding Studio/tokens",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Preview",
+            "href": "/studio/preview",
+            "docId": "Embedding Studio/preview",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Generating code",
+            "href": "/studio/generation",
+            "docId": "Embedding Studio/generation",
+            "unlisted": false
+          }
+        ]
       }
     ]
   },
@@ -102,6 +138,30 @@
       "description": "./docs",
       "sidebar": "tutorialSidebar"
     },
+    "Embedding Studio/generation": {
+      "id": "Embedding Studio/generation",
+      "title": "Generating code",
+      "description": "Generating Widget code",
+      "sidebar": "tutorialSidebar"
+    },
+    "Embedding Studio/introduction": {
+      "id": "Embedding Studio/introduction",
+      "title": "Introduction",
+      "description": "What Embedding Studio offers?",
+      "sidebar": "tutorialSidebar"
+    },
+    "Embedding Studio/preview": {
+      "id": "Embedding Studio/preview",
+      "title": "Preview",
+      "description": "You can preview widgets only if tokens in localstorage are valid.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Embedding Studio/tokens": {
+      "id": "Embedding Studio/tokens",
+      "title": "Tokens",
+      "description": "Previewing is possible only if the tokens are valid - tokens are store in localstorage and you can create them by two buttons located in footer.",
+      "sidebar": "tutorialSidebar"
+    },
     "Getting Started/components": {
       "id": "Getting Started/components",
       "title": "Components",
@@ -117,7 +177,7 @@
     "Getting Started/project-initialization": {
       "id": "Getting Started/project-initialization",
       "title": "Project Initialization",
-      "description": "Create Project / edit existing one",
+      "description": "Backend initialization",
       "sidebar": "tutorialSidebar"
     },
     "Getting Started/terminology": {
@@ -129,7 +189,7 @@
     "single-page": {
       "id": "single-page",
       "title": "Introduction",
-      "description": "EmpliEmbed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.",
+      "description": "Empli-Embed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.",
       "sidebar": "tutorialSidebar"
     }
   }

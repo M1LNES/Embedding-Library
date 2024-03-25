@@ -1,6 +1,6 @@
 ---
 title: Components
-sidebar_position: 4
+sidebar_position: 3
 slug: /begin/components
 ---
 
@@ -12,13 +12,14 @@ The most important component. This component allows to embed existing widgets fr
 
 ### Parameters
 
-- `boardID` _(**number**)_: The ID of the board associated with the widget.
-- `widgetID` _(**number**)_: The ID of the specific widget to embed.
+- `boardID` _(**number**,**required**)_: The ID of the board associated with the widget.
+- `widgetID` _(**number**,**required**)_: The ID of the specific widget to embed.
 - `style` _(**object**)_: JSON object defining the CSS styling for the component.
 - `className` _(**string**)_: Name of the styling class to apply to the component (Will be used in future, now it's just prepared for future development).
 - `params` _(**array**)_: An array of pre-JSON objects for expanding from Omni-Studio.
 - `width` _(**number**)_: The width of the widget component.
 - `height` _(**number**)_: The height of the widget component.
+- `tokenFunc` _(**func**)_: Function that returns ACCESS_TOKEN and OMNI_STUDIO_TOKEN.
 
 ### Returns
 
@@ -28,7 +29,7 @@ A React element representing the embedded widget component.
 
 ```jsx
 import React from 'react'
-import Widget from 'empliembed'
+import Widget from 'empli-embed'
 
 function App() {
 	return (
@@ -82,7 +83,7 @@ A React element representing the visualization.
 
 ```jsx
 import React from 'react'
-import WidgetVision from 'empliembed'
+import WidgetVision from 'empli-embed'
 
 function App() {
 	return (

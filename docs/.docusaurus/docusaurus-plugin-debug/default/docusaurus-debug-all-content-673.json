@@ -11,8 +11,6 @@
           "className": "docs-version-current",
           "path": "/",
           "tagsPath": "/tags",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
-          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/Users/milan.janoch/Documents/embedding_library/docs/sidebars.js",
@@ -29,7 +27,6 @@
               "permalink": "/development/development",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/development.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
@@ -42,6 +39,10 @@
               "previous": {
                 "title": "Conventions",
                 "permalink": "/development/conventions"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/studio/intro"
               }
             },
             {
@@ -54,7 +55,6 @@
               "permalink": "/development/conventions",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/info.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -83,7 +83,6 @@
               "permalink": "/development/structure",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/structure.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -95,12 +94,120 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Components",
-                "permalink": "/begin/components"
+                "title": "Terminology",
+                "permalink": "/begin/terminology"
               },
               "next": {
                 "title": "Conventions",
                 "permalink": "/development/conventions"
+              }
+            },
+            {
+              "id": "Embedding Studio/generation",
+              "title": "Generating code",
+              "description": "Generating Widget code",
+              "source": "@site/docs/04-Embedding Studio/generation.md",
+              "sourceDirName": "04-Embedding Studio",
+              "slug": "/studio/generation",
+              "permalink": "/studio/generation",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Generating code",
+                "sidebar_position": 4,
+                "slug": "/studio/generation"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Preview",
+                "permalink": "/studio/preview"
+              }
+            },
+            {
+              "id": "Embedding Studio/introduction",
+              "title": "Introduction",
+              "description": "What Embedding Studio offers?",
+              "source": "@site/docs/04-Embedding Studio/introduction.md",
+              "sourceDirName": "04-Embedding Studio",
+              "slug": "/studio/intro",
+              "permalink": "/studio/intro",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Introduction",
+                "sidebar_position": 1,
+                "slug": "/studio/intro"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Development",
+                "permalink": "/development/development"
+              },
+              "next": {
+                "title": "Tokens",
+                "permalink": "/studio/tokens"
+              }
+            },
+            {
+              "id": "Embedding Studio/preview",
+              "title": "Preview",
+              "description": "You can preview widgets only if tokens in localstorage are valid.",
+              "source": "@site/docs/04-Embedding Studio/preview.md",
+              "sourceDirName": "04-Embedding Studio",
+              "slug": "/studio/preview",
+              "permalink": "/studio/preview",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Preview",
+                "sidebar_position": 3,
+                "slug": "/studio/preview"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tokens",
+                "permalink": "/studio/tokens"
+              },
+              "next": {
+                "title": "Generating code",
+                "permalink": "/studio/generation"
+              }
+            },
+            {
+              "id": "Embedding Studio/tokens",
+              "title": "Tokens",
+              "description": "Previewing is possible only if the tokens are valid - tokens are store in localstorage and you can create them by two buttons located in footer.",
+              "source": "@site/docs/04-Embedding Studio/tokens.md",
+              "sourceDirName": "04-Embedding Studio",
+              "slug": "/studio/tokens",
+              "permalink": "/studio/tokens",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Tokens",
+                "sidebar_position": 2,
+                "slug": "/studio/tokens"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/studio/intro"
+              },
+              "next": {
+                "title": "Preview",
+                "permalink": "/studio/preview"
               }
             },
             {
@@ -113,13 +220,12 @@
               "permalink": "/begin/components",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/components.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 4,
+              "sidebarPosition": 3,
               "frontMatter": {
                 "title": "Components",
-                "sidebar_position": 4,
+                "sidebar_position": 3,
                 "slug": "/begin/components"
               },
               "sidebar": "tutorialSidebar",
@@ -128,8 +234,8 @@
                 "permalink": "/begin/initialization"
               },
               "next": {
-                "title": "Structure",
-                "permalink": "/development/structure"
+                "title": "Terminology",
+                "permalink": "/begin/terminology"
               }
             },
             {
@@ -142,7 +248,6 @@
               "permalink": "/begin/concepts",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/installation.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -158,34 +263,33 @@
                 "permalink": "/"
               },
               "next": {
-                "title": "Terminology",
-                "permalink": "/begin/terminology"
+                "title": "Project Initialization",
+                "permalink": "/begin/initialization"
               }
             },
             {
               "id": "Getting Started/project-initialization",
               "title": "Project Initialization",
-              "description": "Create Project / edit existing one",
+              "description": "Backend initialization",
               "source": "@site/docs/02-Getting Started/project-initialization.md",
               "sourceDirName": "02-Getting Started",
               "slug": "/begin/initialization",
               "permalink": "/begin/initialization",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/project-initialization.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 3,
+              "sidebarPosition": 2,
               "frontMatter": {
                 "title": "Project Initialization",
-                "sidebar_position": 3,
+                "sidebar_position": 2,
                 "slug": "/begin/initialization",
                 "hide_title": true
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Terminology",
-                "permalink": "/begin/terminology"
+                "title": "Installation",
+                "permalink": "/begin/concepts"
               },
               "next": {
                 "title": "Components",
@@ -202,37 +306,35 @@
               "permalink": "/begin/terminology",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/terminology.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 2,
+              "sidebarPosition": 4,
               "frontMatter": {
                 "title": "Terminology",
-                "sidebar_position": 2,
+                "sidebar_position": 4,
                 "slug": "/begin/terminology",
                 "hide_title": true
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Installation",
-                "permalink": "/begin/concepts"
+                "title": "Components",
+                "permalink": "/begin/components"
               },
               "next": {
-                "title": "Project Initialization",
-                "permalink": "/begin/initialization"
+                "title": "Structure",
+                "permalink": "/development/structure"
               }
             },
             {
               "id": "single-page",
               "title": "Introduction",
-              "description": "EmpliEmbed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.",
+              "description": "Empli-Embed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.",
               "source": "@site/docs/01-single-page.md",
               "sourceDirName": ".",
               "slug": "/",
               "permalink": "/",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/01-single-page.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -267,15 +369,15 @@
                   },
                   {
                     "type": "doc",
-                    "id": "Getting Started/terminology"
-                  },
-                  {
-                    "type": "doc",
                     "id": "Getting Started/project-initialization"
                   },
                   {
                     "type": "doc",
                     "id": "Getting Started/components"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Getting Started/terminology"
                   }
                 ]
               },
@@ -296,6 +398,30 @@
                   {
                     "type": "doc",
                     "id": "Development/development"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Embedding Studio",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Embedding Studio/introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Embedding Studio/tokens"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Embedding Studio/preview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Embedding Studio/generation"
                   }
                 ]
               }

@@ -44,8 +44,6 @@ const config = {
 					sidebarPath: './sidebars.js',
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
 				},
 
 				theme: {
@@ -67,9 +65,9 @@ const config = {
 				},
 				items: [
 					{
-						label: 'Code on GitLab (prototype)',
+						label: 'Code on GitHub ',
 						position: 'left',
-						href: 'https://git.ccl/x/embedded-screen-prototype',
+						href: 'https://github.com/M1LNES/Embedding-Library',
 					},
 					// {
 					// 	label: 'Examples',
@@ -77,8 +75,8 @@ const config = {
 					// 	to: '/examples',
 					// },
 					{
-						href: 'https://web-dev-embedded-screen-prototype-x.eks-prod.us-w2.aws.ccl/playground',
-						label: 'Playground',
+						href: 'https://embedding-studio.vercel.app/',
+						label: 'Embedding Studio',
 						position: 'right',
 					},
 				],

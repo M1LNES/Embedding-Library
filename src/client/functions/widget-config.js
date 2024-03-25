@@ -20,8 +20,8 @@ async function fetchWidgetData(boardID, widgetID, tokenFunc) {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
-				'X-PBToken': tokens?.publicApiToken,
-				'X-OSToken': tokens?.omniApiToken,
+				'X-PBToken': tokens?.ACCESS_TOKEN,
+				'X-OSToken': tokens?.OMNI_API_TOKEN,
 			},
 		})
 
@@ -53,7 +53,7 @@ async function fetchDataFromRequest(path, payload, tokenFunc) {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'X-PBToken': tokens?.publicApiToken,
+				'X-PBToken': tokens?.ACCESS_TOKEN,
 			},
 			body: JSON.stringify({
 				path: path,
@@ -113,8 +113,8 @@ async function fetchBoardFields(boardID, tokenFunc) {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
-				'X-PBToken': tokens?.publicApiToken,
-				'X-OSToken': tokens?.omniApiToken,
+				'X-PBToken': tokens?.ACCESS_TOKEN,
+				'X-OSToken': tokens?.OMNI_API_TOKEN,
 			},
 		})
 

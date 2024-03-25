@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '344'),
+    component: ComponentCreator('/', '555'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '1bf'),
+        component: ComponentCreator('/', '1fc'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'e17'),
+            component: ComponentCreator('/', 'ad6'),
             routes: [
               {
                 path: '/begin/components',
@@ -88,6 +88,30 @@ export default [
               {
                 path: '/development/structure',
                 component: ComponentCreator('/development/structure', 'ffa'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/studio/generation',
+                component: ComponentCreator('/studio/generation', '4b0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/studio/intro',
+                component: ComponentCreator('/studio/intro', 'a0e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/studio/preview',
+                component: ComponentCreator('/studio/preview', '6de'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/studio/tokens',
+                component: ComponentCreator('/studio/tokens', 'ab2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

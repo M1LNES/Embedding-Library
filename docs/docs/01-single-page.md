@@ -4,8 +4,8 @@ sidebar_position: 1
 slug: /
 ---
 
-# EmpliEmbed
+# Empli-Embed
 
-EmpliEmbed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.
+Empli-Embed is JavaScript library that enables embedding widgets from omni-studio to third party applications (outside of VPN) via Emplifi Public API.
 
-If you find a bug, please report to milan.janoch@emplifi.io.
+If you find a bug, please report it to milan.janoch@emplifi.io.

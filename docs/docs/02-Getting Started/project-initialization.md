@@ -1,72 +1,82 @@
 ---
 title: Project Initialization
-sidebar_position: 3
+sidebar_position: 2
 slug: /begin/initialization
 hide_title: true
 ---
 
-## Create Project / edit existing one
+## Backend initialization
 
-Create new project build by `webpack` or edit the existing one. Make sure that you can build and execute the client and server side.
+Create new project using Express.js. In express, require `routes` from `empli-embed` and use prefix `/api` while assigning these routes. Make sure they are assigned to `/api` path.
 
-## Add .env variables
+```javascript
+const { routes } = require('empli-embed')
+const app = express()
 
-To be able to fetch data from APIs, you need to add into .env file (or enviroment varaibles furing deploy) two tokens - `ACCESS_TOKEN` for Emplifi Public API and `OMNI_API_TOKEN` for Omni Studio API. Both of these tokens needs to be valid. You also need to specify `PACKAGE_URL` which is endpoint for downloading minimalized versions of libraries.
+// rest of the code
 
-```env title=".env"
-ACCESS_TOKEN=4eYo9qFmZw2oRXtZnIyOHhUy3TlPLp2JbrsA1MRc7Fx
-OMNI_API_TOKEN=ZnU7lNwYd1nCgVJFyO1qYdKJw9IaZVq5EUxYedRp93O
-PACKAGE_URL=https://3348d0628f75ab43fe445e17eb650c1b.sbksapps.com/3/packages/analytics/bundle.js
+app.use('/api', routes)
 ```
 
-These tokens can be generated e.g. via `playground`.
+Now we've successfully assign routes that are being used by `<Widget/>` component for fetching data.
 
-## Download the external libraries
+## Frontend initialization
 
-### Postinstall script
+### Importing components
 
-Firstly, you need to specify the postinstall script that will be executed after installing dependencies. In `package.json`, simply add to `"scripts"`
+On the client side, import one of the components by
 
-```json title="package.json"
-"postinstall": "./scripts/postinstall.sh",
+```jsx
+import WidgetVision from 'empli-embed'
 ```
 
-Now create in the root of the project folder `scripts` and create file `postinstall.sh`
+or
 
-```bash title="postinstall.sh"
-#!/bin/bash
-set -o errexit
-set -o pipefail
-
-mkdir -p assets
-
-# For DEV execution - parses env variables from .env file.
-
-# ACCESS_TOKEN=$(cat .env | grep ACCESS_TOKEN | cut -d '=' -f2-)
-# PACKAGE_URL=$(cat .env | grep PACKAGE_URL | cut -d '=' -f2- | sed 's/\"//g')
-
-# For deployment - takes env variables from global variables.
-ACCESS_TOKEN=$ACCESS_TOKEN
-PACKAGE_URL=$PACKAGE_URL
-curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -o ./assets/embedding.js ${PACKAGE_URL}
+```jsx
+import { Widget, WidgetVision } from 'empli-embed'
 ```
 
-Sometimes (happened on Mac) these script could not be executed due to permissions. If you are facing this problem, just use `chmod 777 ./scripts/postinstall` command to set execution permission.
+### Setting tokens
 
-### Run install script
+`<Widget>` component requires valid tokens for embedding - `Omni Studio token` and `Public API token`. There are two options how to require these tokens.
 
-After creating post install script, execute installation of dependencies once again.
+#### Environment variables
 
-```cmd
-npm i
+First option is to set tokens into .env file or enviroment variables. This is the easier option. All you need to do is generate valid tokenS (e.g. via [Embdding Studio] (https://embedding-studio.vercel.app/)) and add them into .env file.
+
+```.env title=".env"
+ACCESS_TOKEN=4eYo9qFmZw2oRXtZnIyOHhUy3TlPLp2JbrsA1MRc7Fx        # Public API token
+OMNI_API_TOKEN=ZnU7lNwYd1nCgVJFyO1qYdKJw9IaZVq5EUxYedRp93O      # Omni Studio token
 ```
 
-Now, it should execute the post install script and from Emplifi Public API download PreJSON, PreJSONTime and Vision libraries.
+#### Widget props
 
-### Check if folder `assets` was created
+Second option is creating function that will return object with these tokens. E.g. in Embedding Studio, the tokens are taken from localstorage, so the function looks like
 
-If folder `assets` with file `embedding.js` was created, the installation was successful.
+```jsx title="Creating object with tokens"
+const getTokensFromLocalStorage = () => {
+	return {
+		OMNI_API_TOKEN: localStorage.getItem('omni-studio-api-access-token'),
+		ACCESS_TOKEN: localStorage.getItem('public-api-access-token'),
+	}
+}
+```
 
-## Ready to use
+and after that, just pass this function into props of `<Widget>` component
 
-If everything was successful, the library is now ready to be used.
+```jsx title="Usage"
+<Widget
+    boardID={...}
+    widgetID={...}
+    // other props
+    tokenFunc={getTokensFromLocalStorage}
+/>
+```
+
+#### Default option
+
+If `tokenFunc` is not defined, library will automatically load tokens from .env file.
+
+## Executing app
+
+After previous steps, now you should be able to start application and embed widgets from Omni Studio.

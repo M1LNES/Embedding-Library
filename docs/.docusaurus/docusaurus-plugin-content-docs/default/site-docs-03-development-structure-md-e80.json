@@ -8,7 +8,6 @@
   "permalink": "/development/structure",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-Development/structure.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -20,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Components",
-    "permalink": "/begin/components"
+    "title": "Terminology",
+    "permalink": "/begin/terminology"
   },
   "next": {
     "title": "Conventions",

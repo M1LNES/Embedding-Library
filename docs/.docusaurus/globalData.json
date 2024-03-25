@@ -26,6 +26,26 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Embedding Studio/generation",
+              "path": "/studio/generation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Embedding Studio/introduction",
+              "path": "/studio/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Embedding Studio/preview",
+              "path": "/studio/preview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Embedding Studio/tokens",
+              "path": "/studio/tokens",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Getting Started/components",
               "path": "/begin/components",
               "sidebar": "tutorialSidebar"

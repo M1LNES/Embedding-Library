@@ -1,27 +1,26 @@
 {
   "id": "Getting Started/project-initialization",
   "title": "Project Initialization",
-  "description": "Create Project / edit existing one",
+  "description": "Backend initialization",
   "source": "@site/docs/02-Getting Started/project-initialization.md",
   "sourceDirName": "02-Getting Started",
   "slug": "/begin/initialization",
   "permalink": "/begin/initialization",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/project-initialization.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 2,
   "frontMatter": {
     "title": "Project Initialization",
-    "sidebar_position": 3,
+    "sidebar_position": 2,
     "slug": "/begin/initialization",
     "hide_title": true
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Terminology",
-    "permalink": "/begin/terminology"
+    "title": "Installation",
+    "permalink": "/begin/concepts"
   },
   "next": {
     "title": "Components",

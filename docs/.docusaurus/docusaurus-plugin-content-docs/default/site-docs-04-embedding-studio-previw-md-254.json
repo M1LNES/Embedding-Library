@@ -1,0 +1,19 @@
+{
+  "id": "Embedding Studio/previw",
+  "title": "previw",
+  "description": "",
+  "source": "@site/docs/04-Embedding Studio/previw.md",
+  "sourceDirName": "04-Embedding Studio",
+  "slug": "/Embedding Studio/previw",
+  "permalink": "/Embedding Studio/previw",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tokens",
+    "permalink": "/studio/tokens"
+  }
+}

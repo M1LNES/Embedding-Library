@@ -8,13 +8,12 @@
   "permalink": "/begin/components",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-Getting Started/components.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 3,
   "frontMatter": {
     "title": "Components",
-    "sidebar_position": 4,
+    "sidebar_position": 3,
     "slug": "/begin/components"
   },
   "sidebar": "tutorialSidebar",
@@ -23,7 +22,7 @@
     "permalink": "/begin/initialization"
   },
   "next": {
-    "title": "Structure",
-    "permalink": "/development/structure"
+    "title": "Terminology",
+    "permalink": "/begin/terminology"
   }
 }
