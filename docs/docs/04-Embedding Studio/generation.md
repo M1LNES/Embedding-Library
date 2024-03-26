@@ -10,4 +10,4 @@ After successful preview, button in top right corner will apear. That button wil
 
 ## Generating .env values
 
-If you have both tokens were created successfuly, you can copy these two tokens in .env format. Just press button in footer and copy these variables into clipboard.
+If both tokens were created successfuly, you can copy these two tokens in .env format. Just press button in footer and copy these variables into clipboard.
