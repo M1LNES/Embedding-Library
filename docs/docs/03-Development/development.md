@@ -37,6 +37,14 @@ npm run build
 
 The result is in `/dist` folder and will contain two files - `empli-embed.js` and `empli-embed-backend.js`.
 
+## Running unit tests
+
+To execute all the tests, use command
+
+```
+npm test
+```
+
 ## Updating version on NPM
 
 New version of library can be pushed into npm by

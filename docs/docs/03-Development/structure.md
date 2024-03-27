@@ -29,6 +29,10 @@ File that exports React components.
 
 File with exported routes of Express router.
 
+### `./src/tests/*`
+
+Folder containing all unit tests and files with mocked values.
+
 ## `./script/postinstall.sh`
 
 Script for installing minified versions of libraries.
