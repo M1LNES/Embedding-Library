@@ -10,3 +10,4 @@ scripts
 package.json
 .babelrc
 .mocharc.json
+.nyc_output

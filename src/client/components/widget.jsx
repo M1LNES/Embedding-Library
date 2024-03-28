@@ -58,9 +58,11 @@ const Widget = (props) => {
 	})
 
 	const context = useMemo(() => {
-		const preJsonContext = new PreJSONContext({
-			debug: true,
-		}).declare('data', PreJSONType.Object, null)
+		const preJsonContext = new PreJSONContext().declare(
+			'data',
+			PreJSONType.Object,
+			null
+		)
 
 		if (fieldsToDeclare && !areFieldsLoading) {
 			fieldsToDeclare.forEach((field) => {
@@ -106,12 +108,6 @@ const Widget = (props) => {
 						'Data request expanded config PreJSON is not valid.',
 				}
 			}
-			if (parsedParams === null) {
-				return {
-					expandedRequests: null,
-					errorExpandedConfig: 'Inserted preJSON params are not valid!',
-				}
-			}
 
 			const undefinedParams = requestsNotExpanded.getUndefinedParameters()
 			const areAllKeysInserted = undefinedParams.every(
@@ -125,16 +121,9 @@ const Widget = (props) => {
 				}
 			}
 
-			try {
-				return {
-					expandedRequests: requestsNotExpanded.expand(parsedParams).toJSON(),
-					errorExpandedConfig: null,
-				}
-			} catch (e) {
-				return {
-					expandedRequests: null,
-					errorExpandedConfig: 'Error occured during expanding request.',
-				}
+			return {
+				expandedRequests: requestsNotExpanded.expand(parsedParams).toJSON(),
+				errorExpandedConfig: null,
 			}
 		}
 		return { expandedRequests: null, errorExpandedConfig: null }
@@ -167,12 +156,6 @@ const Widget = (props) => {
 				return { prejson: null, errorVisionConfig: 'PreJSON is not valid' }
 			}
 
-			if (parsedParams === null) {
-				return {
-					expandedRequests: null,
-					errorVisionConfig: 'Inserted preJSON params are not valid!',
-				}
-			}
 			return {
 				prejson: context.parse(widgetData.config).expand(parsedParams).toJSON(),
 				errorVisionConfig: null,

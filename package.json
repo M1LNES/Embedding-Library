@@ -10,7 +10,7 @@
 	"scripts": {
 		"build": "NODE_ENV=production webpack --config ./webpack.config.js",
 		"download": "./scripts/postinstall.sh",
-		"test": "mocha"
+		"test": "nyc mocha"
 	},
 	"author": "Milan Janoch",
 	"license": "ISC",
@@ -39,6 +39,7 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"jsdom": "^24.0.0",
 		"mocha": "^9.2.2",
+		"nyc": "^15.1.0",
 		"sinon": "^17.0.1",
 		"webpack": "^5.88.2",
 		"webpack-cli": "^4.10.0",

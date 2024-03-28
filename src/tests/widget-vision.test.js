@@ -1,4 +1,4 @@
-import assert from 'assert'
+import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 import React from 'react'
 import { render } from '@testing-library/react'
