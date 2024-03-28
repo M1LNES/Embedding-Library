@@ -29,7 +29,7 @@ A React element representing the embedded widget component.
 
 ```jsx
 import React from 'react'
-import Widget from 'empli-embed'
+import { Widget } from 'empli-embed'
 
 function App() {
 	return (
@@ -83,7 +83,7 @@ A React element representing the visualization.
 
 ```jsx
 import React from 'react'
-import WidgetVision from 'empli-embed'
+import { WidgetVision } from 'empli-embed'
 
 function App() {
 	return (
