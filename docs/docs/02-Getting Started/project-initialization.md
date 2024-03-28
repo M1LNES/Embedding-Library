@@ -27,10 +27,10 @@ Now we've successfully assign routes that are being used by `<Widget/>` componen
 On the client side, import one of the components by
 
 ```jsx
-import WidgetVision from 'empli-embed'
+import { WidgetVision } from 'empli-embed'
 ```
 
-or
+or both of them
 
 ```jsx
 import { Widget, WidgetVision } from 'empli-embed'

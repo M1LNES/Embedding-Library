@@ -1,6 +1,6 @@
 {
 	"name": "empli-embed",
-	"version": "1.0.1-alpha.1.26",
+	"version": "1.0.1-alpha.1.27",
 	"description": "JavaScript library for embedding widgets via Emplifi Public API",
 	"main": "dist/empli-embed-backend.js",
 	"module": "dist/empli-embed.js",
