@@ -15,7 +15,7 @@ git clone https://github.com/M1LNES/Embedding-Library.git
 Library requires minified versions of PreJSON and Vision. Firstly, add into `.env` file valid token and package url.
 
 ```
-ACCESS_TOKEN=4eYo9qFmZw2oRXtZnIyOHhUy3TlPLp2JbrsA1MRc7Fx
+ACCESS_TOKEN=$ACCESS_TOKEN
 PACKAGE_URL=https://3348d0628f75ab43fe445e17eb650c1b.sbksapps.com/3/packages/analytics/bundle.js?version=v1.0.0
 ```
 

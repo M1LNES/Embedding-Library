@@ -72,8 +72,8 @@ This component renders a visualization based on fetched data and configuration -
 - `prejson` (**object**): Expanded widget config (**required**).
 - `showConfig` (**bool**): Visualize widget config and not expanded data requests. Default: `false`.
 - `showConfigRevealed` (**bool**): Visualize widget config and expanded data requests. Default: `false`.
-- `dataRequests` (**object**): Not expanded data requests.
-- `expandedDataRequests` (**object|array**): Expanded request(s) (if only one request - object, otherwise array).
+- `dataRequests` (**object**): Not expanded data requests (payloads). Used only for debugging (WidgetVision is used by `<Widget>` component to mount visualizations) to visualize payload.
+- `expandedDataRequests` (**object|array**): Expanded request(s) (if only one request - object, otherwise array). Used only for debugging (WidgetVision is used by `<Widget>` component to mount visualizations) to visualize payloads.
 
 ### Returns
 

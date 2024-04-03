@@ -45,8 +45,8 @@ import { Widget, WidgetVision } from 'empli-embed'
 First option is to set tokens into .env file or enviroment variables. This is the easier option. All you need to do is generate valid tokenS (e.g. via [Embdding Studio] (https://embedding-studio.vercel.app/)) and add them into .env file.
 
 ```.env title=".env"
-ACCESS_TOKEN=4eYo9qFmZw2oRXtZnIyOHhUy3TlPLp2JbrsA1MRc7Fx        # Public API token
-OMNI_API_TOKEN=ZnU7lNwYd1nCgVJFyO1qYdKJw9IaZVq5EUxYedRp93O      # Omni Studio token
+ACCESS_TOKEN=$ACCESS_TOKEN      # Public API token
+OMNI_API_TOKEN=$OMNI_TOKEN      # Omni Studio token
 ```
 
 #### Widget props
