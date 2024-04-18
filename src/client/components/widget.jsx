@@ -109,7 +109,7 @@ const Widget = (props) => {
 				}
 			}
 
-			const undefinedParams = widgetData.getUndefinedParameters()
+			const undefinedParams = requestsNotExpanded.getUndefinedParameters()
 			const areAllKeysInserted = undefinedParams.every(
 				(key) => key in parsedParams
 			)
