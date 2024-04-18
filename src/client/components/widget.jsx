@@ -78,7 +78,7 @@ const Widget = (props) => {
 	}, [fieldsToDeclare, areFieldsLoading])
 
 	const { data: widgetData, isLoading: isWidgetDataLoading } = useQuery({
-		queryKey: ['widget', boardID, widgetID],
+		queryKey: ['widget', boardID],
 		queryFn: async () => await fetchWidgetData(boardID, widgetID, tokenFunc),
 	})
 
