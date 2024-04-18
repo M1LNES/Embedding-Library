@@ -50,7 +50,7 @@ export default {
           "href": "https://github.com/M1LNES/Embedding-Library"
         },
         {
-          "href": "https://embedding-studio.vercel.app/",
+          "href": "https://web-dev-embedded-screen-prototype-x.eks-prod.us-w2.aws.ccl\t\t\t\t\t\t",
           "label": "Embedding Studio",
           "position": "right"
         }

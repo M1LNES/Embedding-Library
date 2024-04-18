@@ -75,7 +75,7 @@ const config = {
 					// 	to: '/examples',
 					// },
 					{
-						href: 'https://embedding-studio.vercel.app/',
+						href: 'https://web-dev-embedded-screen-prototype-x.eks-prod.us-w2.aws.ccl						',
 						label: 'Embedding Studio',
 						position: 'right',
 					},

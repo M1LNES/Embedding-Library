@@ -42,7 +42,7 @@ import { Widget, WidgetVision } from 'empli-embed'
 
 #### Environment variables
 
-First option is to set tokens into .env file or enviroment variables. This is the easier option. All you need to do is generate valid tokenS (e.g. via [Embdding Studio] (https://embedding-studio.vercel.app/)) and add them into .env file.
+First option is to set tokens into .env file or enviroment variables. This is the easier option. All you need to do is generate valid tokenS (e.g. via [Embdding Studio] (https://web-dev-embedded-screen-prototype-x.eks-prod.us-w2.aws.ccl)) and add them into .env file.
 
 ```.env title=".env"
 ACCESS_TOKEN=$ACCESS_TOKEN      # Public API token
