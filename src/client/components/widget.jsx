@@ -78,7 +78,7 @@ const Widget = (props) => {
 	}, [fieldsToDeclare, areFieldsLoading])
 
 	const { data: widgetData, isLoading: isWidgetDataLoading } = useQuery({
-		queryKey: ['widget', boardID],
+		queryKey: ['widget', boardID, widgetID],
 		queryFn: async () => await fetchWidgetData(boardID, widgetID, tokenFunc),
 	})
 
@@ -109,7 +109,7 @@ const Widget = (props) => {
 				}
 			}
 
-			const undefinedParams = requestsNotExpanded.getUndefinedParameters()
+			const undefinedParams = widgetData.getUndefinedParameters()
 			const areAllKeysInserted = undefinedParams.every(
 				(key) => key in parsedParams
 			)
