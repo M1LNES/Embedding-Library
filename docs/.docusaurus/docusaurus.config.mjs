@@ -51,7 +51,7 @@ export default {
         },
         {
           "href": "https://web-dev-embedded-screen-prototype-x.eks-prod.us-w2.aws.ccl\t\t\t\t\t\t",
-          "label": "Embedding Studio",
+          "label": "Embedding Studio (VPN required)",
           "position": "right"
         }
       ],

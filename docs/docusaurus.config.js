@@ -76,7 +76,7 @@ const config = {
 					// },
 					{
 						href: 'https://web-dev-embedded-screen-prototype-x.eks-prod.us-w2.aws.ccl						',
-						label: 'Embedding Studio',
+						label: 'Embedding Studio (VPN required)',
 						position: 'right',
 					},
 				],
