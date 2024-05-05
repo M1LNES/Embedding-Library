@@ -18,6 +18,12 @@ const app = express()
 app.use('/api', routes)
 ```
 
+We need to also specify in `.env` file or system variables the URL of Public API.
+
+```.env title=".env"
+PUBLIC_API_URL=$PUBLIC_API_URL      # Emplifi Public API URL
+```
+
 Now we've successfully assign routes that are being used by `<Widget/>` component for fetching data.
 
 ## Frontend initialization
